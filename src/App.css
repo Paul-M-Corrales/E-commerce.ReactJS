@@ -8,8 +8,16 @@
   align-items: center;
   justify-content: space-evenly;
 }
-.greeting{
+.lista{
+  display: flex;
+}
+.pirelli{
   text-align: center;
-  text-transform: uppercase;
-  color: red;
+}
+.imagen_pirelli{
+  background-size: contain;
+}
+.background{
+  display: flex;
+    justify-content: center;
 }
