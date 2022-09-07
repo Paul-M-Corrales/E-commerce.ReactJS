@@ -16,3 +16,4 @@ export const promesa = new Promise ((respuesta, reject)  => {
        reject(`400 not found`)
     }
 })
+

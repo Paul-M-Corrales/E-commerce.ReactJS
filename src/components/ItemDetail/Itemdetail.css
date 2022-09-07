@@ -1,0 +1,13 @@
+.detail{
+    display: flex;
+}
+.description {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.marca{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 60px;
+}

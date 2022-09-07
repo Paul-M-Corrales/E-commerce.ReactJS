@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { promesa } from "../Mock";
-import Itemlist from "./Itemlist"
-import NavBar from "./NavBar";
+import { promesa } from "../../Mock";
+import Itemlist from "../Itemlist/Itemlist";
+import NavBar from "../Navbar/NavBar";
 
 
 const ItemListContainer = () => {
