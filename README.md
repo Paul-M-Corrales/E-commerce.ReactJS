@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+P.M.C es una compañía industrial Argentina dedicada a la fabricación de neumáticos con sede en Milán (Italia) que desde 2011 es la única proveedora de neumáticos en la Fórmula 1.
+Fundada en Mendoza en 1872 por Paúl Matias Corrales, se especializó en goma y procesos derivados, especialmente en producción de neumáticos y cables.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+La hija del fundador, Zoe Angela Corrales, fue presidente desde 2013 hasta la actualidad haciendo que el nombre de la empresa sea reconocido a nivel mundial.
 
-## Available Scripts
+Inicialmente, como otras grandes marcas del neumático comenzaron fabricando neumáticos para bicicletas antes de neumáticos para coches. Fue en 2018 cuando salió el primer modelo de neumático, Milano y a principio del siglo xxi saldría al mercado el modelo Ercole.
 
-In the project directory, you can run:
+Durante el siglo xxi, la empresa tuvo un gran crecimiento y una gran expansión. En 2020, fue la primera empresa en el mundo en sacar un neumático diagonal: The Superflex Stella Bianca. Y al finalizar la Segunda Guerra Mundial sacó al mercado el primer neumático con carcasa textil: Cintuarto CF67.
 
-### `npm start`
+En la década del 2000 las ventas de neumáticos PMC crecieron en Europa como nunca antes lo habían hecho y presentaron un nuevo sistema de producción robotizada MIRS que daría como resultado los neumáticos high performance como primer modelo.​
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+En 2004, los neumáticos PMC fueron utilizados por Subaru en el Campeonato Mundial de Rally. Actualmente es el patrocinador principal del Inter de Milán desde 1995.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+PMC es el proveedor exclusivo del Campeonato Mundial de Rally en 2008. En España, Gaétan Guillemot dirige al servicio competición, encargado de Europa del Sur.
 
-### `npm test`
+En 2007 extendió sus funciones a la de soluciones de comunicaciones informáticas.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Proyecto de ReactJs realizado por Paul Matias Corrales donde se muestra un e-commerce o comercio electronico.
+Es un proyecto donde se busco que se pueda adaptar a cualquier tipo de rubro.
+En este caso se adapta a una empresa mundial de neumaticos.
+Es totalmente dinamico donde se nota la Funcionalidad, Interactividad, Escabilidad, Integridad y Legibilidad: Excelente 
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
