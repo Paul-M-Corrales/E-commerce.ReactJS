@@ -11,11 +11,13 @@ const incrementa = () =>{
 
     return(
         <div className="counter">
-            <button disabled={count<=initial} onClick={decrementa}>-</button>
-            <span>{count}</span>
-            <button disabled={count>=stock} onClick={incrementa}>+</button>
+            <button disabled={count<=initial} onClick={decrementa} type="button" className="btn btn-primary">-</button>
+            <span className="px-3">{count}</span>
+            <button disabled={count>=stock} onClick={incrementa} type="button" className="btn btn-primary">+</button>
             <div>
-                <button disabled={count<=0} onClick={() => onAdd(count)}>Agregar al carrito</button>
+            
+    
+                <button className="btn btn-primary mt-1" disabled={count<=0} onClick={() => onAdd(count)}>Agregar al carrito</button>
             </div>
         </div>
     );

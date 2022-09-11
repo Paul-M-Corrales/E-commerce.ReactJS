@@ -1,15 +1,17 @@
 import React from "react";
 import '../ItemDetail/Itemdetail.css';
+import Stock from "../Stock/Stock"
 
 
-export const ItemDetail = ({data}) => {
+const ItemDetail = ({item}) => {
 return(
-<div className="container">
+<div className="container py-5">
     <div className="detail">
-        <img className="detail_image" src={data.img} width="300px" alt="" />
-        <div className=" description">
-            <p className="marca"><b>{data.nombre}</b></p>
-            <p>{data.descripcion}</p>
+        {<img className="detail_image" src={item.img_detalle} width="500px" alt={item.nombre} /> }
+        <div className=" description text-md-center">
+        {<img className="detail_image mb-5" src={item.img_titulo} width="350px" alt={item.nombre} /> }
+            <p>{item.detalle}</p>
+            <div><Stock /></div>
         </div>
     </div>
 </div>

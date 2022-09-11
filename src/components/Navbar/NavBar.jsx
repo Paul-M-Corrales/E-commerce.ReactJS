@@ -1,34 +1,32 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
+import {NavLink} from "react-router-dom"
 
 const NavBar = () => {
     return(
         <div>
             <ul className="nav nav-tabs">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">Auto</a>
+                  <NavLink  className="nav-link active" aria-current="page" to="/auto">Auto</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/">Moto</a>
+                  <NavLink className="nav-link" to="/moto">Moto</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/">Competicion</a>
+                  <NavLink className="nav-link" to="/competicion">Competicion</NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/">Bicicleta</a>
+                  <NavLink className="nav-link" to="/bicicleta">Bicicleta</NavLink>
                 </li>
-                <li className="nav-item">
-                  <a className="nav-link" href="/">Camion-Bus</a>
-                </li>
-                <a className="navbar-brand" href="/"> <CartWidget/></a>
+                <NavLink className="navbar-brand" to="/cart"> <CartWidget/></NavLink>
             </ul>
             
         <div>
             <nav className="nav">
-                <a className="navbar-brand" href="/"> <img src="../img/logo.png" width="130" alt="" /></a>
-                <a className="nav-link active" aria-current="page" href="/">Neumaticos</a>
-                <a className="nav-link" href="/">Por qué P.M.C</a>
-                <a className="nav-link" href="/">Encuentre su taller</a>
+                <NavLink className="navbar-brand" to="inicio"> <img src="../img/logo.png" width="130" alt="" /></NavLink>
+                <NavLink className="nav-link active" aria-current="page" to="/oferta">Neumaticos de alto rendimiento</NavLink>
+                <NavLink className="nav-link" to="/PMC">Por qué P.M.C</NavLink>
+                <NavLink className="nav-link" to="/taller">Contacto</NavLink>
             </nav> 
         </div>
 
