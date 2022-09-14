@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
 import { Neumaticos } from "../../Mock";
+import ImagenPrincipal from "../ImagenPrincipal/ImagenPrincipal";
 import Itemlist from "../Itemlist/Itemlist";
 
 
@@ -27,9 +28,8 @@ const ItemListContainer = () => {
     <div> 
         <h1 className="pirelli my-3">NEUMATICOS PIRELLI <img src="https://d3nv2arudvw7ln.cloudfront.net/staticfolder/Tyre/resources/img/pirelli-logo.png" width="200px"alt=""/></h1>
         <div className="background">
-            <img className="imagen_pirelli my-3" src="https://d3nv2arudvw7ln.cloudfront.net/images/global/285/319/Dsk-1920x862-09-4505510967630.jpg" width="100%" alt=""></img>
-        
-          
+            <ImagenPrincipal />
+                 
         </div>  
         <div className="lista">
             <Itemlist Prod = {Productos}/>

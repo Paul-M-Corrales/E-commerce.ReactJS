@@ -4,6 +4,8 @@ import Stock from "../Stock/Stock"
 
 
 const ItemDetail = ({item}) => {
+
+    
 return(
 <div className="container py-5">
     <div className="detail">
