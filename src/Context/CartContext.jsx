@@ -27,14 +27,21 @@ const CartProvider = ({ children }) => {
     }
     console.log(cart); 
   };
+
+const totalPrice = () => cart.reduce((acumulador, prod) => acumulador + prod.quantity, 0)
+
+const totalProducts = () => cart.reduce((acu, item) => acu + item.price * item.quantity, 0)
+
   return (
     <CartContext.Provider
       value={{
-        cart,
         clearCart,
         isInCart,
         removeProduct,
         addProduct,
+        totalPrice,
+        totalProducts,
+        cart
       }}
     >
       {children}
@@ -42,4 +49,5 @@ const CartProvider = ({ children }) => {
   );
 };
 
-export default CartProvider;
+export default CartProvider; 
+
