@@ -2,27 +2,23 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
-import { Neumaticos } from "../../Mock";
 import ImagenPrincipal from "../ImagenPrincipal/ImagenPrincipal";
 import Itemlist from "../Itemlist/Itemlist";
+import { getFirestore, collection, getDocs, query, where} from 'firebase/firestore'
 
 
 const ItemListContainer = () => {
  const [Productos, setProductos]= useState([])
  const {categoriaId} = useParams();
 
- useEffect(() =>{
-    const getData = new Promise((resolve =>{
-      setTimeout(() => {
-        resolve(Neumaticos)
-      }, 500);
-    }));
-    if (categoriaId) {
-      getData.then(res=> setProductos(res.filter(promesa=>promesa.categoria === categoriaId)));
-    }else{
-      getData.then(res=>setProductos(res));
-    }
-  },[categoriaId])
+ useEffect(() => {
+  const db = getFirestore();
+  const itemsCollection = collection(db, 'Neumaticos')
+  const queryItems = categoriaId ? query(itemsCollection, where('categoria', '==', categoriaId )) : itemsCollection;
+  getDocs(queryItems).then(snapShot => {
+    setProductos(snapShot.docs.map(item =>  ({id:item.id, ...item.data()}) ))
+  })
+}, [categoriaId])
   
  return(
     <div> 
