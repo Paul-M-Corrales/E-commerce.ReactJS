@@ -28,9 +28,9 @@ const CartProvider = ({ children }) => {
     console.log(cart); 
   };
 
-const totalPrice = () => cart.reduce((acumulador, prod) => acumulador + prod.quantity, 0)
+const totalProducts = () => cart.reduce((acumulador, prod) => acumulador + prod.quantity, 0)
 
-const totalProducts = () => cart.reduce((acu, item) => acu + item.price * item.quantity, 0)
+const totalPrice = () => cart.reduce((total, item) => total+= item.precio * item.quantity, 0)
 
   return (
     <CartContext.Provider

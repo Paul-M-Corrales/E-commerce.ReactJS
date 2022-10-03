@@ -23,7 +23,7 @@ const NavBar = () => {
             
         <div>
             <nav className="nav">
-                <NavLink className="navbar-brand" to="inicio"> <img src="../img/logo.png" width="130" alt="" /></NavLink>
+                <NavLink className="navbar-brand" to="inicio"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ42CfGxg85LVGVukgs6ACSIRT0zLAk6eERA&usqp=CAU" width="150" alt="" /></NavLink>
                 <NavLink className="nav-link active" aria-current="page" to="/oferta">Neumaticos de alto rendimiento</NavLink>
                 <NavLink className="nav-link" to="/PMC">Por qué P.M.C</NavLink>
                 <NavLink className="nav-link" to="/taller">Contacto</NavLink>
