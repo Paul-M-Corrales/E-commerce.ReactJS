@@ -12,3 +12,6 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 60px;
 }
+img.detail_image.img-fluid {
+    width: 400px;
+}

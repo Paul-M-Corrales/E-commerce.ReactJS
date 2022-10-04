@@ -5,7 +5,7 @@ export const ImagenPrincipal = () => {
     const {categoriaId} = useParams(); 
     let img=""; 
     if (categoriaId === "auto") {
-      img= <img className="imagen_pirelli my-3" src="https://d3nv2arudvw7ln.cloudfront.net/images/global/285/319/Dsk-1920x862-09-4505510967630.jpg" width="100%" alt=""></img>
+      img= <img className="imagen_pirelli my-3 img-fluid" src="https://d3nv2arudvw7ln.cloudfront.net/images/global/285/319/Dsk-1920x862-09-4505510967630.jpg" width="100%" alt=""></img>
     }else if (categoriaId === "moto"){
      img= <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -29,15 +29,15 @@ export const ImagenPrincipal = () => {
   </button>
 </div>
     } else if (categoriaId === "competicion") {
-      img= <img className="imagen_pirelli my-3" src="https://d3nv2arudvw7ln.cloudfront.net/images/global/676/263/hp-motorsport-visore-4505481793415.jpeg" alt="" />
+      img= <img className="imagen_pirelli my-3 img-fluid" src="https://d3nv2arudvw7ln.cloudfront.net/images/global/676/263/hp-motorsport-visore-4505481793415.jpeg" alt="" />
     } else if (categoriaId === "bicicleta") {
-      img= <img className="imagen_pirelli my-3" src="https://www.mtbpro.es/sites/default/files/fotosprincipales/pirelli_scorpion_mtb_1.jpg" alt="" />
+      img= <img className="imagen_pirelli my-3 img-fluid" src="https://www.mtbpro.es/sites/default/files/fotosprincipales/pirelli_scorpion_mtb_1.jpg" alt="" />
     }else if (categoriaId === "oferta") {
-        img= <img className="imagen_pirelli my-3" src="https://d3nv2arudvw7ln.cloudfront.net/images/global/900/131/hero-tyresgroup-4505508874689.png" alt="" />
+        img= <img className="imagen_pirelli my-3 img-fluid" src="https://d3nv2arudvw7ln.cloudfront.net/images/global/900/131/hero-tyresgroup-4505508874689.png" alt="" />
       }else if (categoriaId === "inicio") {
-        img= <img className="imagen_pirelli my-3" src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_75b2eb943e224d1998d3fee12dcd93d1.jpg" alt="" />
+        img= <img className="imagen_pirelli my-3 img-fluid" src="https://acnews.blob.core.windows.net/imgnews/medium/NAZ_75b2eb943e224d1998d3fee12dcd93d1.jpg" alt="" />
       }else if (categoriaId === "cart") {       
-        img=<img className="imagen_pirelli my-3" src="https://d1ih8jugeo2m5m.cloudfront.net/2021/12/pagina-web-con-carrito-de-compras-2.jpg" width="800px" alt="" />
+        img=<img className="imagen_pirelli my-3 img-fluid" src="https://d1ih8jugeo2m5m.cloudfront.net/2021/12/pagina-web-con-carrito-de-compras-2.jpg" width="800px" alt="" />
       }
     
 return(
