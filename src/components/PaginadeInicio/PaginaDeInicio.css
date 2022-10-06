@@ -1,0 +1,36 @@
+.conocimiento{
+    background-color: black;
+}
+.fondo_rueda{
+    background-color: black;
+    display: flex;
+    
+}
+.pared{
+    font-size: 30px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.parrafo{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.fisi{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    text-align: left;
+    left: 50px;
+    top: 50%;
+    z-index: 60;
+    transform: translateY(-50%);
+    max-width: 45%;
+}
