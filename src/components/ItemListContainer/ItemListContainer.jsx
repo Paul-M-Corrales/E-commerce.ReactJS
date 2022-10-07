@@ -5,11 +5,13 @@ import { useParams } from "react-router-dom";
 import ImagenPrincipal from "../ImagenPrincipal/ImagenPrincipal";
 import Itemlist from "../Itemlist/Itemlist";
 import { getFirestore, collection, getDocs, query, where} from 'firebase/firestore'
+import Loading from "../Loading/Loaging";
 
 
 const ItemListContainer = () => {
  const [Productos, setProductos]= useState([])
  const {categoriaId} = useParams();
+ const [loading, setLoading] = useState(true);
 
  useEffect(() => {
   const db = getFirestore();
@@ -17,6 +19,7 @@ const ItemListContainer = () => {
   const queryItems = categoriaId ? query(itemsCollection, where('categoria', '==', categoriaId )) : itemsCollection;
   getDocs(queryItems).then(snapShot => {
     setProductos(snapShot.docs.map(item =>  ({id:item.id, ...item.data()}) ))
+    setLoading(false);
   })
 }, [categoriaId])
   
@@ -27,8 +30,13 @@ const ItemListContainer = () => {
             <ImagenPrincipal />
                  
         </div>  
-        <div className="lista">
-            <Itemlist Prod = {Productos}/>
+        <div className="lista row">
+          <div className="col-md-12">
+          <div className="container">
+            {loading ? <Loading /> : <Itemlist Prod = {Productos}/>}  
+        </div>
+            
+            </div>
         </div>
     </div>
  )

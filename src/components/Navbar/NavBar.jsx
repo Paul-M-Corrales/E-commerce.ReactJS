@@ -1,32 +1,33 @@
 import React from "react";
 import CartWidget from "../CartWidget/CartWidget";
-import {NavLink} from "react-router-dom"
+import {Link} from "react-router-dom"
+import '../Navbar/NavBar.css';
 
 const NavBar = () => {
     return(
-        <div>
+        <div className="container_navbar">
             <ul className="nav nav-tabs">
                 <li className="nav-item">
-                  <NavLink  className="nav-link active" aria-current="page" to="/auto">Auto</NavLink>
+                  <Link  className="nav-link text-white" aria-current="page" to="/auto">Auto</Link>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/moto">Moto</NavLink>
+                  <Link className="nav-link text-white" to="/moto">Moto</Link>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/competicion">Competicion</NavLink>
+                  <Link className="nav-link text-white" to="/competicion">Competicion</Link>
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="/bicicleta">Bicicleta</NavLink>
+                  <Link className="nav-link text-white" to="/bicicleta">Bicicleta</Link>
                 </li>
-                <NavLink className="navbar-brand" to="/cart"> <CartWidget/></NavLink>
+                <Link className="navbar-brand" to="/cart"> <CartWidget/></Link>
             </ul>
             
         <div>
             <nav className="nav">
-                <NavLink className="navbar-brand" to="inicio"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ42CfGxg85LVGVukgs6ACSIRT0zLAk6eERA&usqp=CAU" width="150" alt="" /></NavLink>
-                <NavLink className="nav-link active" aria-current="page" to="/oferta">Neumaticos de alto rendimiento</NavLink>
-                <NavLink className="nav-link" to="/PMC">Por qué P.M.C</NavLink>
-                <NavLink className="nav-link" to="/taller">Contacto</NavLink>
+                <Link className="navbar-brand" to="/"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-X9oM23h704vzvBbUgf9edYDEdD4gOigrjTvaHDMoupWMgW-VL042UelJM5p15euLdYQ&usqp=CAU" width="100" alt="" /></Link>
+                <Link className="nav-link text-white" aria-current="page" to="/oferta">Neumaticos de alto rendimiento</Link>
+                <Link className="nav-link text-white" to="/inicio">Eventos P.M.C</Link>
+                <Link className="nav-link text-white" to="/contacto">Contacto</Link>
             </nav> 
         </div>
 

@@ -88,7 +88,7 @@ export const Cart = () => {
                             :
                             <div className="offcanvas offcanvas-end"  id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div className="offcanvas-body" >   
-                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ42CfGxg85LVGVukgs6ACSIRT0zLAk6eERA&usqp=CAU" width="150" alt="" />                                
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-X9oM23h704vzvBbUgf9edYDEdD4gOigrjTvaHDMoupWMgW-VL042UelJM5p15euLdYQ&usqp=CAU" width="150" alt="" />                                
                                         <h2 className='pt-5 orderTitle '>Felicitaciones!!<br/> Su pedido se a realizado con exito</h2>
                                             <h3 className='pt-3 orderSubtitle '> Su numero de orden es: <p className='nOrder mt-4'>'{orderId}'</p></h3>
                                     <div className="mb-3 text-start pt-2 d-flex justify-content-center">

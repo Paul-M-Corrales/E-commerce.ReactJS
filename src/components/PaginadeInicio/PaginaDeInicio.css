@@ -6,8 +6,8 @@
     display: flex;
     
 }
-.pared{
-    font-size: 30px;
+.parrafo_ruda{
+    font-size: 20px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -22,8 +22,8 @@
     margin-right: 15px;
 }
 .fisi{
-    display: flex;
-    flex-direction: column;
+   /*  display: flex;
+    flex-direction: column; */
     color: white;
     font-size: 10px;
     position: absolute;
